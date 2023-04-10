@@ -1,0 +1,42 @@
+@media (min-width: 800px) {
+
+    .desktop {
+        display: flex;
+    }
+
+    .main__container-posts {
+        width: 45%;
+    }
+
+    .container-posts__p {
+        height: 55px;
+    }
+
+    .main__first-container {
+        width: 45%;
+    }
+
+    .main__container-Suggestions {
+        width: 25%;
+
+        margin-top: 125px;
+    }
+
+    .container-Suggestions__ul {
+        overflow-x: auto;
+        flex-direction: column;
+    }
+
+    .container-Suggestions__li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .dialog {
+        margin: auto;
+        width: 40%;
+    }
+
+}

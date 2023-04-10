@@ -1,0 +1,350 @@
+/* HEADER */
+.body__header {
+
+    width: 100%;
+    height: 76px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    background-color: var(--grey1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0%;
+}
+
+.header__title {
+    color: var(--whiteFixed);
+
+    font-weight: var(--weight-h2);
+    font-size: var(--size-h2);
+    line-height: var(--line-height-h2);
+}
+
+.header__paragraph {
+    color: var(--whiteFixed);
+
+    font-weight: var(--weight-p2);
+    font-size: var(--size-p2);
+    line-height: var(--line-height-p2);
+}
+
+/* SECTION PUBLISH */
+
+.main__first-container {
+
+    height: auto;
+    width: auto;
+
+    margin: 120px 5% 0px 5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.first-container__container-user {
+
+    height: auto;
+
+    display: flex;
+    gap: 15px;
+}
+
+.first-container__img {
+
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.first-container__data-user {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-container__name {
+
+    font-size: var(--size-h2);
+    font-weight: var(--weight-h2);
+    line-height: var(--line-height-h2);
+}
+
+.first-container__stack {
+
+    font-size: var(--size-p2);
+    font-weight: var(--weight-p2);
+    line-height: var(--line-height-p2);
+}
+
+.first-container__title-post {
+
+    height: 52px;
+    padding: 16px 20px;
+
+    overflow-x: auto;
+
+    border: solid 2px var(--grey4);
+    border-radius: var(--radius);
+
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+    line-height: var(--line-height-p);
+
+    color: var(--grey2);
+
+}
+
+.first-container__text-post {
+
+    height: 130px;
+    padding: 28px 21px 29px;
+
+
+    overflow-y: auto;
+
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+    line-height: var(--line-height-p);
+
+    color: var(--grey2);
+    border: solid 2px var(--grey4);
+    border-radius: var(--radius);
+
+    font-family: 'Inter', sans-serif;
+}
+
+.first-container__button-publish {
+
+    width: 69px;
+    height: 38px;
+    align-items: center;
+    align-self: flex-end;
+
+    border: solid 2px var(--grey4);
+    background-color: var(--grey4);
+    color: var(--grey3);
+    border-radius: var(--radius);
+
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+    line-height: var(--line-height-p);
+}
+
+.first-container__button-publish__enable {
+
+    background-color: var(--primary-color);
+    color: var(--whiteFixed);
+
+    border: solid 2px var(--primary-color);
+
+}
+
+.first-container__button-publish__enable:hover {
+
+    background-color: var(--secundary-color);
+    border: solid 2px var(--secundary-color);
+}
+
+/* SECTION SUGGESTION */
+
+.main__container-Suggestions {
+
+    width: auto;
+    height: auto;
+    margin: 30px 5% 0px 5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-Suggestions__title {
+
+    font-size: var(--size-h2);
+    font-weight: var(--weight-h2);
+    line-height: var(--line-height-h2);
+}
+
+.container-Suggestions__ul {
+
+    display: flex;
+    gap: 28px;
+
+    overflow-x: scroll;
+}
+
+.container-Suggestions__li {
+    display: grid;
+    gap: 15px;
+
+    grid-template-areas:
+        "photo name name"
+        " button button none";
+
+}
+
+.container-Suggestion__data-user {
+    grid-area: name;
+}
+
+.container-Suggestions__img {
+    grid-area: photo;
+
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.container-Suggestions__h2 {
+
+    white-space: nowrap;
+
+    font-size: var(--size-h2);
+    font-weight: var(--weight-h2);
+    line-height: var(--line-height-h2);
+
+}
+
+.container-Suggestions__span {
+
+    white-space: nowrap;
+
+    font-size: var(--size-p2);
+    font-weight: var(--weight-p2);
+    line-height: var(--line-height-p2);
+}
+
+.container-Suggestions__button {
+    grid-area: button;
+
+    width: 89px;
+    height: 28px;
+
+    border-radius: var(--radius);
+    border: solid 1px var(--grey1);
+
+    background-color: var(--whiteFixed);
+    color: var(--grey1);
+
+    font-weight: 600;
+}
+
+.container-Suggestions__button:hover {
+
+    background-color: #EDF2FF;
+    color: var(--primary-color);
+
+    border-radius: var(--radius);
+    border: solid 1px var(--primary-color);
+}
+
+/* SECTION POSTS */
+
+.main__container-posts {
+
+    width: auto;
+    height: auto;
+    margin: 30px 5% 0px 5%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-posts__title {
+
+    font-size: var(--size-h1);
+    font-weight: var(--weight-h1);
+    line-height: var(--line-height-h1);
+}
+
+.container-posts__li {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.container-posts__container-user {
+
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 52px auto;
+    grid-template-areas:
+        "photo name"
+        "photo stack";
+}
+
+.container-posts__photo {
+
+    grid-area: photo;
+
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.container-posts__name {
+
+    grid-area: name;
+
+    font-size: var(--size-h2);
+    font-weight: var(--weight-h2);
+    line-height: var(--line-height-h2);
+}
+
+.container-posts__stack {
+
+    grid-area: stack;
+
+    font-size: var(--size-p2);
+    font-weight: var(--weight-p2);
+    line-height: var(--line-height-p2);
+}
+
+.container-posts__title {
+
+    font-size: var(--size-h1);
+    font-weight: var(--weight-h1);
+    line-height: var(--line-height-h1);
+}
+
+.container-posts__p {
+
+    height: 140px;
+    overflow: hidden;
+
+    font-size: var(--size-p);
+    font-weight: var(--weight-p);
+    line-height: var(--line-height-p);
+}
+
+.container-posts__container-footer {
+
+    display: flex;
+    gap: 25px;
+}
+
+.container-posts__button {
+
+    border-radius: var(--radius);
+    border: 2px solid var(--grey1);
+
+    background-color: var(--grey1);
+    color: var(--whiteFixed);
+
+    height: 38px;
+    padding: 12px;
+
+    white-space: nowrap;
+}
+
+
+.container-posts__span {
+    align-self: center;
+}
